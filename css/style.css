@@ -1,0 +1,99 @@
+/* Google Fonts Import for Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Global CSS Variables */
+:root {
+    --tipse-green: #7BC043;
+    --tipse-cream: #F2E8D5;
+    --tipse-dark: #1B1F23;
+    --font-main: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--tipse-dark);
+    color: var(--tipse-cream);
+    font-family: var(--font-main);
+}
+
+button {
+    background-color: var(--tipse-green);
+    color: var(--tipse-dark);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: var(--tipse-cream);
+    color: var(--tipse-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-logo {
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.msg {
+    text-align: center;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.msg h1 {
+    color: var(--tipse-green);
+    font-family: var(--font-main);
+    margin-bottom: 20px;
+}
+
+.msg p {
+    color: var(--tipse-cream);
+    font-family: var(--font-main);
+    font-size:1.2rem;   
+ }
+
+.msg h5 {
+    color: var(--tipse-cream);
+    opacity: 0.7;
+    font-family: var(--font-main);
+    margin-top: 40px;
+}
+
+.msg a {
+    color: var(--tipse-cream);
+    text-decoration: underline;
+}
+
+.help-icon {
+    max-width: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+footer {
+    text-align: center;
+    margin-top: 25px;
+    padding: 20px;
+    color: var(--tipse-cream);
+    font-family: var(--font-main);
+}
