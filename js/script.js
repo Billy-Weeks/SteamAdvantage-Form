@@ -19,6 +19,7 @@ elementForm.addEventListener('submit', function (event) {
     const apiKey = "sb_publishable_JMMPbDQIpBhZWIZQXaclCQ_iTUbm_1W";
 
 
+
     // 1. Ensure the session ID persists across reloads so campus Wi-Fi users don't conflict
     let currentSessionId = sessionStorage.getItem('user_form_session_id');
     if (!currentSessionId) {
@@ -45,7 +46,7 @@ elementForm.addEventListener('submit', function (event) {
             }
 
             // FETCH 2: Submit the actual payload to your target table
-            return fetch(`${supabaseURL}/members`, {
+            return fetch(`${supabaseURL}/STEM-Advantage_Attend`, {
                 method: "POST",
                 headers: {
                     "apikey": apiKey,
